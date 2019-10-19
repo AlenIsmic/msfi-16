@@ -1,0 +1,233 @@
+
+// Fonts
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.body{
+    font-family: 'Arial';
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a {
+    text-decoration: none!important;
+    border-radius: 0 !important;
+    color:black;
+}
+
+.form-control:disabled{
+    background: #ffffff;
+}
+
+textarea:disabled{
+    background: #ffffff;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(to bottom, #e5e5e5 0%, white 100%);
+}
+
+a:hover {
+    color: #d31a23;
+}
+
+.action:hover {
+    color: #d31a23;
+}
+
+.buttonLink {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+input[type="text"], textarea {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    border-radius: 0 !important;
+}
+
+.selectpicker:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #e7e7e7;
+}
+
+option{
+    border-color: #e7e7e7;
+}
+
+th{
+    font-weight:500 !important;
+    font-variant: small-caps;
+}
+
+select, select:focus, select:active, select:focus{
+    border-radius: 0 !important;
+    -webkit-appearance: none !important;
+}
+
+button{
+    border-radius: 0 !important;
+}
+
+.navbar-laravel {
+    /*background-color: #fff;*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background: linear-gradient(to bottom, white 0%, #e5e5e5 100%);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.leftNav{
+    font-size:36px;
+    cursor:pointer;
+    color:#d31a23;
+    text-shadow:0px 0px 0 #000, 1px 0px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #d31a23;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.title{
+    color: black;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+
+hr.style-two {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+div.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    height: 0px;
+    line-height: 0px;
+}
+
+.hr-title {
+    color: black;
+    font-variant: small-caps;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hr-title-grey {
+    color: #797979;
+    font-variant: small-caps;
+}
+
+.fontVariant{
+    font-variant: small-caps;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+thead tr{
+    color: black;
+    font-variant: small-caps;
+    font-size: 16px;
+    text-shadow: 0px 0.2px black;
+}
+
+.bghome{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.buttonOutline{
+    border: 1px solid #282828;
+    background: linear-gradient(to bottom, white 0%, #e5e5e5 100%);
+    color: black;
+}
+
+.buttonOutline:hover{
+    color: black;
+}
+
+.card{
+    border: 1px solid #e7e7e7;
+    border-radius: 0 !important;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('/images/ajax-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
